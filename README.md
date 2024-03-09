@@ -20,10 +20,12 @@ def index(request):
     return render(request,'index.html',**{'Feature1':Feature1}**)
 
 To display the videos on the html document with the above model,use
-**    {% for task in Feature1 %} 
+
+
+  {% for task in Feature1 %} 
     <p>{{task.username}}</p>
     <p>{{task.details}}</p>
     <video width="300px" controls src="{{task.videos.url}}"></video>
     {% endfor %}
-**
+
     
